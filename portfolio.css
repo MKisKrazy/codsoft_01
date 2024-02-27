@@ -1,0 +1,421 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* General*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: rgb(85,85,85);
+}
+ /*Navigation*/
+nav,.nav-links{
+    display: flex;
+}
+
+.nav-links{
+    font-size:1.5rem;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav{
+     justify-content: space-around;
+     align-items: center;
+     height: 17vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: rgb(181,181,181);
+}
+
+.logo-name{
+    font-size: 35px;
+}
+
+.logo-name:hover{
+    cursor: default;
+}
+
+/* Hamburger menu*/
+
+.close{
+    display: none;
+    
+}
+
+#hamburger-nav{
+    display: none;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+    
+}
+
+.hamburger-links a{
+     display: block;
+     text-align: center;
+     padding: 10px;
+     font-size: 1.5rem;
+     color: black;
+     text-decoration: none;
+     transition: all 0.3 ease-in-out;
+}
+.hamburger-links.open{
+    max-height: 300px;
+}
+
+.close2{
+    display: none;
+}
+
+.disappear{
+    display: inline-block;
+}
+
+.hamburger-icon{
+    transition: all 0.3 ease-in-out;
+}
+.hamburger-icon img{
+  width: 2.8rem;
+  height: 2.8rem;
+  cursor: pointer;
+  
+}
+ .hamburger-links {
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    right:0;
+    background-color: white;
+    overflow: hidden;
+    max-height: 0;
+    width: fit-content;
+    transition: all 0.3 ease-in-out;
+ }
+
+
+
+
+
+
+
+/*Profile Section*/
+
+section{
+    padding-top: 4vh;
+    height:96vh;
+    box-sizing: border-box;
+    margin: 0 10rem;
+    min-height: fit-content;
+}
+
+#profile-section{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    gap: 5rem;
+}
+
+.pfp-container,.abt-pic-cont{
+    display: flex;
+    height: 400px;
+    width:400px;
+    margin: auto 0;
+}
+
+.profile-section-text{
+    align-self: center;
+    text-align: center;
+}
+
+.pst p,.abt-text-1{
+    font-weight: 600;
+}
+
+.pst-role{
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.pst-name,.abt-title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+.socials-container{   
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    margin-top: 1rem;
+}
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+    transition: all 200ms ease-in-out;
+}
+
+.icon:hover{
+   transform: scale(1.18);
+}
+
+/*Buttons*/
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn{
+    font-weight: 600;
+    border-radius: 2rem;
+    padding: 1rem;
+    transition: all 300ms ease;
+    width: 8rem;
+}
+
+.btn-ci,
+.btn-dw{
+    border:rgb(53,53,53) 0.1rem solid;
+}
+
+.btn-ci:hover,
+.btn-dw:hover{
+    cursor: pointer;
+}
+
+.btn-ci,
+.btn-dw:hover{
+    background-color: rgb(53,53,53);
+    color: white;
+}
+
+.btn-ci:hover{
+    background-color: rgb(0,0,0);
+}
+
+.btn-dw{
+    background-color: none;
+}
+
+.btn-dw:hover{
+    border: rgb(255,255,255) 0.1rem solid;
+}
+
+/*About*/
+
+.about-container{
+    display:flex;
+    height:80%;
+    gap:4rem;
+}
+
+#about{
+    
+    position: relative;
+
+}
+.abt-text-1,.abt-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abt-pic-cont{
+    margin-top: 6rem;
+}
+
+.abt-cont-2,.about-details-container{
+    display: flex;
+}
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+.abt-cont-2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap:2rem;
+}
+
+.abt-pic-cont img{
+    border-radius: 2rem;
+}
+
+.education-container,.experience-container{
+    padding: 1.5rem;
+    flex:1;
+    background: white;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-radius: 2rem;
+   
+    text-align:center;
+    border-color: rgb(183,183,183);
+}
+
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.article-cont{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.article-text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.article-main{
+    display:flex;
+    gap: 2rem;
+}
+
+.skills-cont{
+    display: flex;
+    gap: 5rem;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.skill-box{
+   
+    margin-top: 2rem;  
+    flex:1;
+    background: white;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-radius: 2rem;
+   padding: 1.5rem;
+    text-align:center;
+    border-color: rgb(183,183,183);
+}
+
+#experience{
+    position: relative;
+}
+
+#projects{
+    position: relative;
+}
+
+.project-cont{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+
+.project-pic-cont img{
+      border-radius: 2rem; 
+      height: 90%;
+      width: 90%;
+}
+
+.prj-c{
+    padding: 1.5rem;
+    flex:1;
+    background:rgb(250,250,250);
+    border: rgb(53,53,53) 0.1rem solid;
+    border-radius: 2rem;
+  
+    text-align:center;
+    border-color: rgb(163,163,163);
+}
+
+.prj-btn{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-color: rgb(163,163,163);
+}
+
+.prj-name{
+    padding-top: 1rem;
+}
+
+/*contact*/
+
+#contact{
+    position: relative;
+    height: 76vh;
+}
+.contact-cont{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.5rem;
+    gap: 0.4rem;
+}
+
+.contact-info p:hover{
+    cursor: pointer;
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: rgb(181,181,181);
+}
+
+.contact-info img{
+    cursor: default;
+    
+}
+
+.contact-info img:hover{
+    transform: none;
+}
+
+.email-icon{
+    height: 2.5rem;
+}
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+footer p{
+    text-align: center;
+}

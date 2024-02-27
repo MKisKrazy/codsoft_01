@@ -1,0 +1,100 @@
+@media screen and (max-width:1400px){
+
+    #profile-section{
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+
+    .abt-cont-2{
+        flex-wrap: wrap;
+    }
+
+    #contact,
+    #projects {
+      height: fit-content;
+    }
+
+}
+
+@media screen and (max-width:1200px){
+
+    #desktop-nav{
+        display: none;
+    }
+
+    #hamburger-nav{
+        display: flex;
+        right: 0;
+    }
+
+    #experience,.skills-cont{
+        margin-top: 2rem;
+    }
+
+    #profile-section,.about-container,.skills-cont{
+        display: block;
+        margin-top: 1rem;
+    }
+
+
+.article-main,.project-cont,.contact-cont{
+    display: flex;
+    flex-direction: column;
+    
+}
+    .arrow{
+        display: none;
+    }
+
+    section,.about-container,.skills-cont,.project-cont{
+        height: fit-content;
+    }
+
+    section{
+        margin: 0 5%;
+        
+    }
+
+    .abt-pic-cont,.pfp-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+      }
+
+     .contact-info{
+        font-size: 1rem;
+        
+     }
+    .icon{
+        height: 1.5rem;
+    }
+     .email-icon{
+        height: 2rem;
+     }
+
+footer nav{
+   margin-top: 4rem;
+    height: fit-content;
+}
+     .nav-links{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+        font-size: 1rem;
+     }
+
+     footer p{
+        
+        font-size: 0.8rem;
+        padding-top: 2rem;
+     }
+
+     footer{
+        padding-bottom: 0%;
+     }
+
+     #contact{
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+     }
+}

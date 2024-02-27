@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo-name">Mahesh Krishna</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href=#about>About</a></li>
+                <li><a href=#experience>Experience</a></li>
+                <li><a href=#projects>Projects</a></li>
+                <li><a href=#contact>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo-name">Mahesh Krishna</div>
+        <div class="hamburger-menu" >
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <img src="assets/hamburger.png" alt="hamburger-menu"  class="burger">
+                <img src="assets/x-solid.svg" alt="hamburger-close"  class="close" >
+            </div>
+            <div class="hamburger-links" >
+                <li><a href=#about>About</a></li>
+                <li><a href=#experience>Experience</a></li>
+                <li><a href=#projects>Projects</a></li>
+                <li><a href=#contact>Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+     
+    <section id="profile-section">
+        <div class="pfp-container">
+            <img src="assets/pfppp.jpg" alt="Mahesh Krishna">
+        </div>
+        <div class="profile-section-text">
+            <p class="pst-p1">Hello I'm</p>
+            <h1 class="pst-name">Mahesh Krishna</h1>
+            <p class="pst-role">Web Developer</p>
+        
+        <div class="btn-social-cont">
+            <div class="btn-container">
+                <button class="btn btn-dw" onclick="window.open('./assets/mkresume.pdf')">Download CV</button>
+                <button class="btn btn-ci" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+    
+            <div class="socials-container">
+               <img src="assets/github.png" alt="github" class="icon" onclick="location.href='https://github.com/MKisKrazy'"> 
+               <img src="assets/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/maheshkrishna02/'">  
+            </div>
+    
+        </div>
+    </div>
+    </section>
+
+    <section id="about">
+        <p class="abt-text-1">Get To Know More</p>
+        <h1 class="abt-title">About Me</h1>
+
+        <div class="about-container">
+        <div class="abt-pic-cont">
+            <img src="./assets/Designer.png" alt="about picture">
+        </div>
+        
+        <div class="about-details-container">
+            <div class="abt-cont-2">
+                <div class="experience-container">
+                    <img src="./assets/experience.png" alt="experience" class="icon">
+                    <h3>Experience</h3>
+                    <p>Various Internships in<br>Web Development<br>Python Development</p>
+                </div>
+        
+                <div class="education-container">
+                    <img src="./assets/education.png" class="icon">
+                    <h3>Education</h3>
+                    <p>B.E Bachelor's Degree(pursuing) <br></p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p class="about-info">
+                    'm an aspiring engineering student with a passion for web development, I have a strong foundation in Python and have successfully completed various small projects. I also have hands-on experience in front-end development, including creating a YouTube front-end clone. Currently, I am actively expanding my skill set by learning JavaScript to enhance my web development capabilities. I am dedicated to continuous learning and growth in the field of web development and am excited to connect with like-minded professionals and explore new opportunities in this dynamic industry. 
+                </p>
+            </div>
+            
+            </div>
+        </div>
+
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+
+      </section>
+        
+    
+      <section id="experience">
+
+        <p class="abt-text-1">Explore My</p>
+        <h1 class="abt-title">Skills</h1>
+
+        <div class="skills-cont">
+            <div class="skill-box">
+                <p class="pst-role">Web Development</p>
+
+                <div class="article-main">
+                    <div class="article-sec">
+                        <div class="article-cont">
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div class="article-text">
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </div>
+        
+                        <div class="article-cont">
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div class="article-text">
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </div>
+        
+                        <div class="article-cont">
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div class="article-text">
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="article-sec">
+                        <div class="article-cont">
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div class="article-text">
+                                <h3>MySQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </div>
+        
+                        <div class="article-cont">
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div class="article-text">
+                                <h3>BootStrap</h3>
+                                <p>Basic</p>
+                            </div>
+                        </div>
+        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <p class="pst-role">Other Skills</p>
+
+                <div class="article-main">
+                    <div class="article-sec">
+                        <div class="article-cont">
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div class="article-text">
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </div>
+        
+                        <div class="article-cont">
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div class="article-text">
+                                <h3>Java</h3>
+                                <p>Basic</p>
+                            </div>
+                        </div>
+        
+                        <div class="article-cont">
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div class="article-text">
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="article-sec">
+                        <div class="article-cont">
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div class="article-text">
+                                <h3>Canva</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </div>
+        
+                        <div class="article-cont">
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div class="article-text">
+                                <h3>Figma</h3>
+                                <p>Basic</p>
+                            </div>
+                        </div>
+        
+                        <div class="article-cont">
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div class="article-text">
+                                <h3>Premier Pro</h3>
+                                <p>Basic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>  
+
+            <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+          />
+
+    </section>
+
+    <section id="projects">
+        <p class="abt-text-1">Browse my recent</p>
+        <h1 class="abt-title">Projects</h1>
+
+        <div class="project-cont">
+            <div class=" prj-c ">
+                <div class="project-pic-cont">
+                    <img src="./assets/js-calci.png" alt="about picture">
+                </div>
+                <div class="prj-name"><pc class="pst-role">JS-Calculator</p></div>
+                <div class=" prj-btn">
+                    <button class="btn btn-dw" onclick="location.href='https://github.com/MKisKrazy/js-calculator'">Github</button>
+                    <button class="btn btn-dw" onclick="location.href='https://mkiskrazy.github.io/js-calculator/'">Live Demo</button>
+                </div>
+            </div>
+
+            <div class=" prj-c ">
+                <div class="project-pic-cont">
+                    <img src="./assets/yt-clone.png" alt="about picture">
+                </div>
+                <div class="prj-name"><pc class="pst-role">YouTube Clone(Frontend)</p></div>
+                <div class=" prj-btn">
+                    <button class="btn btn-dw" onclick="location.href='https://github.com/MKisKrazy/YouTube-Clone'">Github</button>
+                    <button class="btn btn-dw" onclick="location.href='https://mkiskrazy.github.io/YouTube-Clone/'">Live Demo</button>
+                </div>
+            </div>
+
+            <div class=" prj-c ">
+                <div class="project-pic-cont">
+                    <img src="./assets/rpc-js.png" alt="about picture">
+                </div>
+                <div class="prj-name"><pc class="pst-role">Project 1</p></div>
+                <div class=" prj-btn">
+                    <button class="btn btn-dw" onclick="location.href='https://github.com/MKisKrazy/Rock-Paper-Scissors'">Github</button>
+                    <button class="btn btn-dw" onclick="location.href='https://mkiskrazy.github.io/Rock-Paper-Scissors/'">Live Demo</button>
+                </div>
+            </div>
+    
+           
+            </div>
+        </div>
+
+            
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+
+    </section>
+
+    <section id="contact">
+        <p class="abt-text-1">Get in touch</p>
+        <h1 class="abt-title">Contact Me</h1>
+
+        <div class="contact-cont">
+            <div class="contact-info">
+                <img src="./assets/email.png" alt="email" class="icon email-icon">
+                <p class="pst-p1"><a  href="mailto:mahihaasan123@gmail.com">mahihaasan123@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info">
+                <img src="assets/linkedin.png" alt="linkedin" class="icon ">
+                <p class="pst-p1"><a href="https://www.linkedin.com/in/maheshkrishna02/'">Mahesh Krishna</a></p>
+            </div>
+        </div>
+
+    </section>
+
+
+<footer>
+    <nav class="nav-link-container">
+        <ul class="nav-links">
+            <li><a href=#about>About</a></li>
+            <li><a href=#experience>Experience</a></li>
+            <li><a href=#projects>Projects</a></li>
+            <li><a href=#contact>Contact</a></li>
+        </ul>
+    </nav>
+    <p>Copyright &#169; 2023 Mahesh Krishna. All Rights Reserved.</p>
+</footer>
+
+
+
+
+
+
+<script src="portfolio.js"></script>
+</body>
+</html>
